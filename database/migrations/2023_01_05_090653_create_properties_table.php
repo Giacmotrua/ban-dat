@@ -18,6 +18,11 @@ return new class extends Migration
             $table->string('property_id', 200)->unique();
             $table->string('area', 200);
             $table->tinyInteger('house_facade');
+            $table->text('description');
+            $table->string('province', 200);
+            $table->string('district', 200);
+            $table->string('ward', 200);
+            $table->string('address', 200);
             $table->json('image');
             $table->string('lat');
             $table->string('long');

@@ -121,6 +121,35 @@
                         </div>
                         <div class="form-group mb-4">
                             <div class="row">
+                                <label class="col-md-4 control-label" for="product_description">Địa chỉ</label>
+                                <div class="col-md-4">
+                                    <div class="row province_field mb-2">
+                                        <label class="col-md-4 control-label" for="province">Tỉnh</label>
+                                        <select class="form-control col-md-7" name="province" id="province">
+                                            <option disabled selected="selected">Chọn</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="row district_field mb-2">
+                                        <label class="col-md-4 control-label" for="district">Quận/Huyện</label>
+                                        <select class="form-control col-md-7" name="district" id="district">
+                                            <option value="" selected="selected" disabled>Chọn</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="row ward_field mb-2">
+                                        <label class="col-md-4 control-label" for="ward">Phường/Xã</label>
+                                        <select class="form-control col-md-7" name="ward" id="ward">
+                                            <option value="" selected="selected" disabled>Chọn</option>
+                                        </select>
+                                    </div>
+                                    <input name="address"  class="form-control input-md" placeholder="Địa chỉ cụ thể" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="row">
                                 <label class="col-md-4 control-label" for="filebutton">Ảnh sản phẩm</label>
                                 <div class="col-md-4">
                                     <div class="input-group hdtuto control-group lst increment" >

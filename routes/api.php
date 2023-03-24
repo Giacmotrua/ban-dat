@@ -19,19 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//Route::group(['prefix' => 'api'], function () {
-//    Route::get('province', [LocationController::class, 'province']);
-//    Route::get('district', [LocationController::class, 'district']);
-//    Route::get('ward', [LocationController::class, 'ward']);
-//});
-
-//Route::prefix('api')
-//    ->group(function () {
-//        Route::get('province', [LocationController::class, 'province']);
-//        Route::get('district', [LocationController::class, 'district']);
-//        Route::get('ward', [LocationController::class, 'ward']);
-//    });
-
 Route::get('province', [LocationController::class, 'province']);
 Route::get('district', [LocationController::class, 'district']);
 Route::get('ward', [LocationController::class, 'ward']);
